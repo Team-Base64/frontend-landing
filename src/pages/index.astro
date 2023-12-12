@@ -4,10 +4,8 @@ import SectionContainer from "@/components/SectionContainer.astro";
 import faqData from "@/data/faqData.json";
 import testimonialData from "@/data/testimonialData.json";
 import featuresData from "@/data/featuresData.json";
-import { Icon } from "astro-icon";
 import Accordion from "@/components/Accordion.astro";
 import HomeBanner from "@/components/HomeBanner.astro";
-import { MotionBTTContainer } from "@/components/motion/MotionBTTContainer";
 import BadgeGroup from "@/components/badge/BadgeGroup.astro";
 import BadgeMessage from "@/components/badge/BadgeMessage.astro";
 import PageTitle from "@/components/PageTitle.astro";
@@ -23,121 +21,104 @@ import Column from "@/components/Column.astro";
 ---
 
 <Layout
-    title="NutriTrack - A landing page template 🚀"
-    description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
+        title="NutriTrack - A landing page template 🚀"
+        description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
 >
     <div class="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20">
-        <HomeBanner />
+        <HomeBanner/>
         <!-- Home Banner -->
         <SectionContainer
-            class="components--container wrap wrap-px grid gap-8 sm:gap-24"
+                class="components--container wrap wrap-px grid gap-8 sm:gap-24"
         >
             <SectionContainer id="features" class="features">
                 <BadgeGroup alignment="center">
-                    <BadgeMessage>Features</BadgeMessage>
-                    <BadgeIcon icon="mdi:star-circle-outline" />
+                    <BadgeMessage>Возможности</BadgeMessage>
+                    <BadgeIcon icon="mdi:star-circle-outline"/>
                 </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
-                    Simplify Your Nutrition Journey with NutriTrack
+                    Не можете собрать все матерьялы и чаты вместе?
                 </PageTitle>
                 <Content class="text-center" alignment="center">
                     <p>
-                        Hey there! Welcome to NutriTrack, the ultimate nutrition
-                        meal planner powered by Notion. We&apos;ve got some
-                        awesome features lined up to make your nutrition journey
-                        a piece of cake (pun intended). Check them out:
+                        Попрощайтесь с хаосом и
+                        воспользуйтесь нашей платформой для работы с учениками!
                     </p>
                 </Content>
-                <ContentImage contentImageData={featuresData} />
+                <ContentImage contentImageData={featuresData}/>
             </SectionContainer>
             <!-- Features -->
             <SectionContainer class="feature-tabs">
                 <BadgeGroup alignment="center">
-                    <BadgeMessage>More Features</BadgeMessage>
-                    <BadgeIcon icon="twemoji:waving-hand" />
+                    <BadgeMessage>Больше возможностей</BadgeMessage>
+                    <BadgeIcon icon="twemoji:waving-hand"/>
                 </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
-                    Master Your Meal Planning and Nutrition Journey
+                    Упрости планирование занятий и хранение заданий
                 </PageTitle>
                 <Content class="text-center" alignment="center">
                     <p>
-                        Our comprehensive Notion template designed to empower
-                        you on your meal planning and nutrition journey. With
-                        our user-friendly features, customizable layouts, and
-                        seamless recipe integration, taking control of your
-                        meals has never been easier.
+                        Наш календарь позволит вам назначать и переносить занятия, а банк задач хранить все задания в
+                        одном месте.
                     </p>
                 </Content>
                 <CardGroup
-                    class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
+                        class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
                 >
                     <Card class="col-span-1 text-primary-900">
                         <CardBody class="w-full bg-white-600/20 p-12">
                             <CardImage
-                                src="/images/features4.png"
-                                alt="Customizable Layouts image used."
+                                    src="/images/features4.png"
+                                    alt="Customizable Layouts image used."
                             />
                             <CardHeader
-                                class="!text-black !text-2xl !font-bold"
+                                    class="!text-black !text-2xl !font-bold"
                             >
-                                Customizable Layouts
+                                Планирование занятий
                             </CardHeader>
                             <p>
-                                Personalize your meal planning experience with
-                                our flexible layouts. Tailor your sections,
-                                categories, and tabs to suit your unique style
-                                and organization preferences. Our template
-                                adapts to your needs, providing a seamless and
-                                personalized planning experience.
+                                Упростите процесс назначения занятий и соберите все уроки в одном месте. Создавайте,
+                                изменяйте, удаляйте события - ученик получит уведомление в свой мессенджер.
                             </p>
                         </CardBody>
                     </Card>
                     <Card class="col-span-1 text-primary-900">
                         <CardBody class="w-full bg-white-600/20 p-12">
                             <CardImage
-                                src="/images/features3.png"
-                                alt="Progress Tracking image used."
+                                    src="/images/features3.png"
+                                    alt="Progress Tracking image used."
                             />
                             <CardHeader
-                                class="!text-black !text-2xl !font-bold"
+                                    class="!text-black !text-2xl !font-bold"
                             >
-                                Progress Tracking
+                                Хранение заданий в банке задач
                             </CardHeader>
                             <p>
-                                Celebrate your wins and stay motivated on your
-                                nutrition journey. NutriTrack allows you to
-                                monitor your progress with weight, measurements,
-                                and other key metrics. Track your improvements
-                                over time and see the positive impact of your
-                                healthy choices.
+                                Храните все задания в одном месте. Переипользуйте их при создания домашнего задания.
                             </p>
                         </CardBody>
                     </Card>
                 </CardGroup>
             </SectionContainer>
             <!-- More Features -->
-            <SectionContainer id="testimonials" class="benefits">
-                <BadgeGroup alignment="left">
-                    <BadgeMessage>Testimonials</BadgeMessage>
-                    <BadgeIcon icon="twemoji:waving-hand" />
-                </BadgeGroup>
-                <PageTitle class="" type="default">
-                    This is what our customers have to say about this template
-                </PageTitle>
-                <Column columnData={testimonialData} />
-            </SectionContainer>
-            <!-- Testimonials -->
+            <!--<SectionContainer id="testimonials" class="benefits">-->
+            <!--    <BadgeGroup alignment="center">-->
+            <!--        <BadgeMessage>Отзывы</BadgeMessage>-->
+            <!--        <BadgeIcon icon="twemoji:waving-hand"/>-->
+            <!--    </BadgeGroup>-->
+            <!--    <PageTitle class="" type="default">-->
+            <!--        Вот что наши пользователи говорят о EDUCRM-->
+            <!--    </PageTitle>-->
+            <!--    <Column columnData={testimonialData}/>-->
+            <!--</SectionContainer>-->
+            <!--&lt;!&ndash; Testimonials &ndash;&gt;-->
             <SectionContainer id="faq" class="faq">
                 <BadgeGroup alignment="center">
-                    <BadgeMessage>FAQ</BadgeMessage>
+                    <BadgeMessage>Часто задаваемые вопросы</BadgeMessage>
                 </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
-                    Got some burning questions about NutriTrack?
-                    <br />
-                    <br />
-                    No worries! We&apos;ve got the answers you need:
+                    Остались вопросы по нашему сервису?
                 </PageTitle>
-                <Accordion accordionData={faqData} />
+                <Accordion accordionData={faqData}/>
             </SectionContainer>
         </SectionContainer>
     </div>

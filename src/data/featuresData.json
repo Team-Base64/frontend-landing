@@ -1,16 +1,23 @@
 [
-    {
-        "id": 1,
-        "title": "Effortless Planning",
-        "content": "Say goodbye to meal planning stress! With NutriTrack, planning your meals becomes a breeze. Our user-friendly Notion template lets you create customized daily or weekly meal plans effortlessly. Enjoy a balanced and nutritious diet without the hassle.",
-        "align": "right",
-        "image": "/images/features1.png"
-    },
-    {
-        "id": 1,
-        "title": "Shopping List",
-        "content": "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
-        "align": "left",
-        "image": "/images/features2.png"
-    }
+  {
+    "id": 1,
+    "title": "Централизованные диалоги с учениками",
+    "content": "Вся коммуникация с учениками теперь в одном месте. Чаты, обсуждения, вопросы и ответы - все это доступно нашим пользователям, обеспечивая удобство и эффективность общения.",
+    "align": "right",
+    "image": "/images/features1.png"
+  },
+  {
+    "id": 2,
+    "title": "Создание домашних заданий",
+    "content": "Не нужно тратить время на перенос заданий из одного места в другое. Наша платформа позволяет создавать домашние задания прямо на сайте, делая процесс обучения более структурированным и удобным.",
+    "align": "left",
+    "image": "/images/features2.png"
+  },
+  {
+    "id": 3,
+    "title": "Проверка домашних занятий",
+    "content": "Наша платформа позволяет проверять выполнение заданий и оценивать успехи учеников прямо на сайте. Это удобное средство контроля, которое поможет поддерживать учебный процесс под контролем.",
+    "align": "right",
+    "image": "/images/features2.png"
+  }
 ]

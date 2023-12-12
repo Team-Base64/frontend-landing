@@ -4,9 +4,8 @@
 import "../styles/globals.scss";
 import SEO from "@/components/seo/SEO.astro";
 import Header from "@/components/Header.astro";
-import { SOCIALS } from "@config";
-import Footer from "@/components/Footer.astro";
-import footerNavData from "@/data/footerNavData.json";
+// import Footer from "@/components/Footer.astro";
+// import footerNavData from "@/data/footerNavData.json";
 
 const currentYear = new Date().getFullYear();
 
@@ -16,13 +15,12 @@ const {
     description,
     keywords,
     url,
-    twitterhandle,
     image
 } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="ru" class="scroll-smooth">
     <head>
         <SEO
             title={title}
@@ -36,7 +34,7 @@ const {
         <main class={`main relative overflow-hidden ${className && className}`}>
             <Header />
             <slot />
-            <Footer footerNavData={footerNavData} />
+            <!--<Footer footerNavData={footerNavData} />-->
         </main>
     </body>
 </html>
