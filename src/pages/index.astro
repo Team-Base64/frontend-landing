@@ -21,79 +21,83 @@ import Column from "@/components/Column.astro";
 ---
 
 <Layout
-        title="NutriTrack - A landing page template 🚀"
-        description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
+    title="EDUCRM"
+    description="Организуйте процесс образования с наше помощью"
 >
     <div class="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20">
-        <HomeBanner/>
+        <HomeBanner />
         <!-- Home Banner -->
         <SectionContainer
-                class="components--container wrap wrap-px grid gap-8 sm:gap-24"
+            class="components--container wrap wrap-px grid gap-8 sm:gap-24"
         >
             <SectionContainer id="features" class="features">
                 <BadgeGroup alignment="center">
                     <BadgeMessage>Возможности</BadgeMessage>
-                    <BadgeIcon icon="mdi:star-circle-outline"/>
+                    <BadgeIcon icon="mdi:star-circle-outline" />
                 </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
                     Не можете собрать все материалы и чаты вместе?
                 </PageTitle>
                 <Content class="text-center" alignment="center">
                     <p>
-                        Попрощайтесь с хаосом и
-                        воспользуйтесь нашей платформой для работы с учениками!
+                        Попрощайтесь с хаосом и воспользуйтесь нашей платформой
+                        для работы с учениками!
                     </p>
                 </Content>
-                <ContentImage contentImageData={featuresData}/>
+                <ContentImage contentImageData={featuresData} />
             </SectionContainer>
             <!-- Features -->
             <SectionContainer class="feature-tabs">
                 <BadgeGroup alignment="center">
                     <BadgeMessage>Больше возможностей</BadgeMessage>
-                    <BadgeIcon icon="twemoji:waving-hand"/>
+                    <BadgeIcon icon="twemoji:waving-hand" />
                 </BadgeGroup>
                 <PageTitle class="text-center mx-auto" type="default">
                     Упрости планирование занятий и хранение заданий
                 </PageTitle>
                 <Content class="text-center" alignment="center">
                     <p>
-                        Наш календарь позволит вам назначать и переносить занятия, а банк задач хранить все задания в
-                        одном месте.
+                        Наш календарь позволит вам назначать и переносить
+                        занятия, а банк задач хранить все задания в одном месте.
                     </p>
                 </Content>
                 <CardGroup
-                        class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
+                    class="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2"
                 >
                     <Card class="col-span-1 text-primary-900">
                         <CardBody class="w-full bg-white-600/20 p-12">
                             <CardImage
-                                    src="/images/features4.png"
-                                    alt="Customizable Layouts image used."
+                                src="/images/features4.png"
+                                alt="Customizable Layouts image used."
                             />
                             <CardHeader
-                                    class="!text-black !text-2xl !font-bold"
+                                class="!text-black !text-2xl !font-bold"
                             >
                                 Планирование занятий
                             </CardHeader>
                             <p>
-                                Упростите процесс назначения занятий и соберите все уроки в одном месте. Создавайте,
-                                изменяйте, удаляйте события - ученик получит уведомление в свой мессенджер.
+                                Упростите процесс назначения занятий и соберите
+                                все уроки в одном месте. Создавайте, изменяйте,
+                                удаляйте события - ученик получит уведомление в
+                                свой мессенджер.
                             </p>
                         </CardBody>
                     </Card>
                     <Card class="col-span-1 text-primary-900">
                         <CardBody class="w-full bg-white-600/20 p-12">
                             <CardImage
-                                    src="/images/features3.png"
-                                    alt="Progress Tracking image used."
+                                src="/images/features3.png"
+                                alt="Progress Tracking image used."
                             />
                             <CardHeader
-                                    class="!text-black !text-2xl !font-bold"
+                                class="!text-black !text-2xl !font-bold"
                             >
                                 Хранение заданий в банке задач
                             </CardHeader>
                             <p>
-                                Храните все задания в одном месте. Переипользуйте их при создания домашнего задания.
+                                Храните все задания в одном месте.
+                                Переипользуйте их при создания домашнего
+                                задания.
                             </p>
                         </CardBody>
                     </Card>
@@ -118,7 +122,7 @@ import Column from "@/components/Column.astro";
                 <PageTitle class="text-center mx-auto" type="default">
                     Остались вопросы по нашему сервису?
                 </PageTitle>
-                <Accordion accordionData={faqData}/>
+                <Accordion accordionData={faqData} />
             </SectionContainer>
         </SectionContainer>
     </div>
