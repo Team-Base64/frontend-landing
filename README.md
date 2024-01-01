@@ -1,3 +1,3 @@
-# Landing page for [EDUCRM](https://educrm.us.to/)
+# Landing page for [EDUCRM](https://edu-crm.ru/)
 
 ### Template made by [chrstnl](https://chrstnl.com/)
