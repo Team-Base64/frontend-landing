@@ -1,6 +1,6 @@
 [
-    { "name": "Возможности", "to": "#features", "href": "/#features" },
-    { "name": "Часто задаваемые вопросы", "to": "#faq", "href": "/#faq" },
+    { "name": "Возможности", "to": "/start#features", "href": "/start#features" },
+    { "name": "Часто задаваемые вопросы", "to": "/start#faq", "href": "/start#faq" },
     {
         "name": "Контакты",
         "href": "https://github.com/Team-Base64",

@@ -7,50 +7,52 @@ import ButtonGroup from "./button/ButtonGroup.astro";
 import Content from "./Content.astro";
 import SectionContainer from "./SectionContainer.astro";
 import PageTitle from "./PageTitle.astro";
-import {Icon} from "astro-icon";
-import {Image} from "@astrojs/image/components";
-import {MotionBTTContainer} from "./motion/MotionBTTContainer.jsx";
+import { Icon } from "astro-icon";
+import { Image } from "@astrojs/image/components";
+import { MotionBTTContainer } from "./motion/MotionBTTContainer.jsx";
+import {SITE} from "../config";
 ---
 
 <SectionContainer class="page-banner--container py-16">
     <SectionContainer class="page-banner--inner-container wrap wrap-px z-10">
         <BadgeGroup alignment="center">
             <BadgeMessage>Открой EDUCRM!</BadgeMessage>
-            <BadgeIcon icon="mdi:hand-wave"/>
+            <BadgeIcon icon="mdi:hand-wave" />
         </BadgeGroup>
         <PageTitle class="text-center mx-auto" type="heavy">
             Добро пожаловать на платформу для организации занятий!
         </PageTitle>
         <Content class="text-center" alignment="center">
             <p>
-                Наша платформа создана специально для репетиторов, чтобы упростить ведение занятий и улучшить
-                взаимодействие с учениками. Мы предоставляем возможности, объединяющие все необходимые
+                Наша платформа создана специально для репетиторов, чтобы
+                упростить ведение занятий и улучшить взаимодействие с учениками.
+                Мы предоставляем возможности, объединяющие все необходимые
                 инструменты в одном месте.{" "}
             </p>
         </Content>
         <div class="mt-6 mb-16 text-center">
             <ButtonGroup alignment="center">
-                <Button href="#features">Изучите возможности</Button>
+                <Button href="/start#features">Изучите возможности</Button>
                 <a
-                        role="button"
-                        href="https://educrm.us.to/"
-                        class="btn btn--secondary"
+                    role="button"
+                    href={SITE.siteUrl}
+                    class="btn btn--secondary"
                 >
                     Начните пользоваться
-                    <Icon name="mdi:arrow-right" class="w-6"/>
+                    <Icon name="mdi:arrow-right" class="w-6" />
                 </a>
             </ButtonGroup>
         </div>
         <div class="page-banner--image">
             <Image
-                    src={"/images/nutritrack-hero-banner.png"}
-                    width={1024}
-                    height={680}
-                    alt={"Page Banner"}
-                    objectFit={"cover"}
-                    aspectRatio={16 / 9}
-                    format={"webp"}
-                    class="mx-auto"
+                src={"/images/features1.png"}
+                width={1024}
+                height={680}
+                alt={"Page Banner"}
+                objectFit={"contain"}
+                aspectRatio={16 / 9}
+                format={"webp"}
+                class="mx-auto"
             />
         </div>
     </SectionContainer>

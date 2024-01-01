@@ -8,7 +8,7 @@ import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://astro-nutritrack.chrstnl.com/",
+    site: "https://edu-crm.ru/start/",
     vite: {
         optimizeDeps: {
             exclude: ["@resvg/resvg-js"]
@@ -17,6 +17,9 @@ export default defineConfig({
             external: ["svgo"]
         }
     },
+    // redirects: {
+    //     '/': '/start'
+    // },
     integrations: [
         mdx(),
         sitemap(),

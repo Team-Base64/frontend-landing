@@ -3,7 +3,8 @@
 import type { Site, SocialMediaObjects } from "./types";
 
 export const SITE: Site = {
-    siteUrl: "https://educrm.us.to/", // Always put "/" at the end of the URL
+    siteUrl: "https://edu-crm.ru/login", // Always put "/" at the end of the URL
+    basePath: "/start", // Always put "/" at the end of the URL
     author: "chrstnl",
     desc: "Платформа для организации занятий репетитора.",
     title: "EDUCRM - Платформа для организации занятий репетитора",

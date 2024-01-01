@@ -5,6 +5,7 @@ import ButtonGroup from "./button/ButtonGroup.astro";
 import { Icon } from "astro-icon";
 import { Image } from "@astrojs/image/components";
 import navData from "@/data/navData.json";
+import {SITE} from "../config";
 ---
 
 <header
@@ -14,7 +15,7 @@ import navData from "@/data/navData.json";
     <SectionContainer class="header--container wrap wrap-px">
         <div class="header-logo--container">
             <h1 class="logo mb-0">
-                <a href="/">
+                <a href="/start">
                     <Image
                         src="/nutritrack.svg"
                         alt="logo"
@@ -31,7 +32,7 @@ import navData from "@/data/navData.json";
             <ButtonGroup class="hidden md:block">
                 <a
                     role="button"
-                    href="https://educrm.us.to/"
+                    href={SITE.siteUrl}
                     class="btn btn--secondary ml-4"
                 >
                     Начать пользоваться

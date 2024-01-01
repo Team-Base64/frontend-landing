@@ -1,5 +1,6 @@
 export type Site = {
     siteUrl: string;
+    basePath: string;
     author: string;
     desc: string;
     title: string;
