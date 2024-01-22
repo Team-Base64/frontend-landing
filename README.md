@@ -1,3 +1,18 @@
-# Landing page for [EDUCRM](https://edu-crm.ru/)
+# Репозиторий с лендингом сервиса EDUCRM 
 
-### Template made by [chrstnl](https://chrstnl.com/)
+Представляет собой главную страницу проекта и содержит информацию о функционале сервиса
+
+### Основные команды
+
+`npm ci` - Установка зависимостей проекта
+
+`npm start` - Запуск в Production режиме
+
+
+`npm run dev` - Запуск в Debug режиме
+
+---
+
+> Коммит со строкой `[DEPLOY]` в сообщении вызовет workflow для деплоя на сервер.
+
+- **Автор шаблона - [chrstnl](https://chrstnl.com/)**
