@@ -1,23 +1,23 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import SectionContainer from "@/components/SectionContainer.astro";
-import faqData from "@/data/faqData.json";
-import testimonialData from "@/data/testimonialData.json";
-import featuresData from "@/data/featuresData.json";
 import Accordion from "@/components/Accordion.astro";
-import HomeBanner from "@/components/HomeBanner.astro";
-import BadgeGroup from "@/components/badge/BadgeGroup.astro";
-import BadgeMessage from "@/components/badge/BadgeMessage.astro";
-import PageTitle from "@/components/PageTitle.astro";
 import Content from "@/components/Content.astro";
 import ContentImage from "@/components/ContentImage.astro";
+import HomeBanner from "@/components/HomeBanner.astro";
+import PageTitle from "@/components/PageTitle.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import BadgeGroup from "@/components/badge/BadgeGroup.astro";
 import BadgeIcon from "@/components/badge/BadgeIcon.astro";
-import CardGroup from "@/components/card/CardGroup.astro";
+import BadgeMessage from "@/components/badge/BadgeMessage.astro";
 import Card from "@/components/card/Card.astro";
 import CardBody from "@/components/card/CardBody.astro";
-import CardImage from "@/components/card/CardImage.astro";
+import CardGroup from "@/components/card/CardGroup.astro";
 import CardHeader from "@/components/card/CardHeader.astro";
-import Column from "@/components/Column.astro";
+import CardImage from "@/components/card/CardImage.astro";
+import faqData from "@/data/faqData.json";
+import featuresData from "@/data/featuresData";
+import Layout from "@/layouts/Layout.astro";
+import calendarImg from "/public/images/features4.png";
+import bankImg from "/public/images/features5.png";
 ---
 
 <Layout
@@ -67,7 +67,9 @@ import Column from "@/components/Column.astro";
                     <Card class="col-span-1 text-primary-900">
                         <CardBody class="w-full bg-white-600/20 p-12">
                             <CardImage
-                                src="/images/features4.png"
+                                src={calendarImg.src}
+                                width={calendarImg.width}
+                                height={calendarImg.height}
                                 alt="Customizable Layouts image used."
                             />
                             <CardHeader
@@ -86,7 +88,9 @@ import Column from "@/components/Column.astro";
                     <Card class="col-span-1 text-primary-900">
                         <CardBody class="w-full bg-white-600/20 p-12">
                             <CardImage
-                                src="/images/features3.png"
+                                src={bankImg.src}
+                                width={bankImg.width}
+                                height={bankImg.height}
                                 alt="Progress Tracking image used."
                             />
                             <CardHeader

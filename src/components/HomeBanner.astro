@@ -1,16 +1,16 @@
 ---
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+import { SITE } from "../config";
+import Content from "./Content.astro";
+import PageTitle from "./PageTitle.astro";
+import SectionContainer from "./SectionContainer.astro";
 import BadgeGroup from "./badge/BadgeGroup.astro";
 import BadgeIcon from "./badge/BadgeIcon.astro";
 import BadgeMessage from "./badge/BadgeMessage.astro";
 import Button from "./button/Button.astro";
 import ButtonGroup from "./button/ButtonGroup.astro";
-import Content from "./Content.astro";
-import SectionContainer from "./SectionContainer.astro";
-import PageTitle from "./PageTitle.astro";
-import { Icon } from "astro-icon";
-import { Image } from "@astrojs/image/components";
-import { MotionBTTContainer } from "./motion/MotionBTTContainer.jsx";
-import {SITE} from "../config";
+import bannerImg from "/public/images/features1.png";
 ---
 
 <SectionContainer class="page-banner--container py-16">
@@ -33,11 +33,7 @@ import {SITE} from "../config";
         <div class="mt-6 mb-16 text-center">
             <ButtonGroup alignment="center">
                 <Button href="/start#features">Изучите возможности</Button>
-                <a
-                    role="button"
-                    href={SITE.siteUrl}
-                    class="btn btn--secondary"
-                >
+                <a role="button" href={SITE.siteUrl} class="btn btn--secondary">
                     Начните пользоваться
                     <Icon name="mdi:arrow-right" class="w-6" />
                 </a>
@@ -45,14 +41,12 @@ import {SITE} from "../config";
         </div>
         <div class="page-banner--image">
             <Image
-                src={"/images/features1.png"}
-                width={1024}
-                height={680}
+                src={bannerImg.src}
+                width={bannerImg.width}
+                height={bannerImg.height}
                 alt={"Page Banner"}
-                objectFit={"contain"}
-                aspectRatio={16 / 9}
                 format={"webp"}
-                class="mx-auto"
+                class="mx-auto iii"
             />
         </div>
     </SectionContainer>
